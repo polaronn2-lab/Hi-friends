@@ -5,7 +5,7 @@ const letters = {
     text: `
 Dear Juvi,
 
-Thank you for everything.
+Thank you for always being there. I appreciate you more than I say.
     `
   },
 
@@ -15,7 +15,7 @@ Thank you for everything.
     text: `
 Dear Seiji,
 
-You’ve been amazing. I'll miss you, so so much
+You made everything lighter and more memorable.
     `
   },
 
@@ -25,7 +25,7 @@ You’ve been amazing. I'll miss you, so so much
     text: `
 Dear Vince,
 
-I’ll remember this always.
+I’ll always remember the moments we shared.
     `
   }
 };
