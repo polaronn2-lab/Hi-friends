@@ -3,16 +3,24 @@
 <head>
   <title>Letters For My Friends</title>
   <link rel="stylesheet" href="style.css">
+
+  <!-- Fancy font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Quicksand&display=swap" rel="stylesheet">
 </head>
 <body>
+
   <div class="container">
-    <h1>📩 A Letter For You</h1>
-    <p>Enter your password:</p>
+
+    <img src="header.jpg" class="header-img">
+
+    <h1>🍃 A Letter For You</h1>
+    <p>Enter your password to open your letter.</p>
 
     <input type="password" id="password" placeholder="Your password">
-    <button onclick="checkPassword()">Open</button>
+    <button onclick="checkPassword()">Open Letter</button>
 
     <div id="letterBox"></div>
+
   </div>
 
   <script src="script.js"></script>
