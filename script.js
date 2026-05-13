@@ -9,12 +9,6 @@ Thank you for always being there...
 Dear Seiji,
 
 I appreciate our friendship...
-`,
-
-  "vince123": `
-Dear Vince,
-
-You’ve made life more memorable...
 `
 };
 
