@@ -1,9 +1,9 @@
+
 const letters = {
   "mathwizard": {
     img: "zachzach.jpg",
     color: "#d2b48c",
     song: "zachzach.mp3",
-    decor: ["zach1.png", "zach2.png"],
     text: `
 HI PREEEE
 
@@ -15,7 +15,6 @@ So Happy grad parechong!! Medjo I don't know how to be sentimental and all that 
     img: "seiji.jpg",
     color: "#e1f0ff",
     song: "seiji.mp3",
-    decor: ["cloud1.png", "cloud2.png"],
     text: `
 Dear Seiji,
 
@@ -27,7 +26,6 @@ You made everything lighter and more memorable.
     img: "vince.jpg",
     color: "#fff1dc",
     song: "vince.mp3",
-    decor: ["sparkle1.png", "sparkle2.png"],
     text: `
 Dear Vince,
 
@@ -35,3 +33,35 @@ I’ll always remember the moments we shared.
     `
   }
 };
+
+function checkPassword() {
+  const input = document.getElementById("password").value;
+  const letterBox = document.getElementById("letterBox");
+
+  const data = letters[input];
+
+  if (!data) {
+    letterBox.innerHTML = `<p class="error">Wrong password.</p>`;
+    return;
+  }
+
+  letterBox.innerHTML = `
+    <div class="card" style="background:${data.color}">
+
+      <img src="${data.img}" class="friend-img">
+
+      <div class="letter">
+        ${data.text.replace(/\n/g, "<br>")}
+      </div>
+
+      <audio id="bgmusic" src="${data.song}"></audio>
+
+    </div>
+  `;
+
+  // play music safely (won't crash site if blocked)
+  const music = document.getElementById("bgmusic");
+  if (music) {
+    music.play().catch(() => {});
+  }
+}
