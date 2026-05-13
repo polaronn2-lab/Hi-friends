@@ -9,24 +9,36 @@ body {
   align-items: center;
 }
 
+/* MAIN CONTAINER */
 .container {
   width: 650px;
-  background: rgba(255,255,255,0.92);
+  max-width: 92%;
+  background: rgba(255, 255, 255, 0.92);
   padding: 30px;
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   text-align: center;
 }
 
+/* TITLE */
 h1 {
   color: #2f5d3a;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 5px;
 }
 
+p {
+  color: #4f6f57;
+}
+
+/* INPUT + BUTTON */
 input {
   padding: 12px;
   width: 60%;
   border-radius: 10px;
   border: 1px solid #bcd7b7;
+  outline: none;
+  margin-top: 10px;
 }
 
 button {
@@ -36,47 +48,71 @@ button {
   background: #4f8a5b;
   color: white;
   cursor: pointer;
+  margin-left: 5px;
+  transition: 0.2s ease;
 }
 
 button:hover {
   background: #3f6f49;
+  transform: scale(1.03);
 }
 
-/* 🪴 LETTER CARD */
+/* 💌 LETTER CARD */
 .card {
   margin-top: 25px;
-  background: #f7fff4;
-  border-radius: 15px;
+  border-radius: 18px;
   overflow: hidden;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
   animation: fadeIn 0.8s ease;
 }
 
+/* 🖼️ IMAGE */
 .friend-img {
   width: 100%;
-  height: 250px;
+  height: 260px;
   object-fit: cover;
+  display: block;
 }
 
+/* ✉️ TEXT INSIDE LETTER */
 .letter {
-  padding: 20px;
+  padding: 22px;
   text-align: left;
   line-height: 1.7;
   color: #2e3d2f;
+  font-size: 15.5px;
 }
 
+/* ❌ ERROR */
 .error {
-  color: red;
+  color: #b00020;
   margin-top: 20px;
 }
 
+/* ✨ ANIMATION */
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(12px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* 📱 MOBILE FRIENDLY */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 100%;
   }
 }
