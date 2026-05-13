@@ -1,9 +1,10 @@
 function checkPassword() {
-  const inputRaw = document.getElementById("password").value;
-  const input = inputRaw.trim().toLowerCase();
+  const raw = document.getElementById("password").value;
+  const input = raw.trim().toLowerCase();
   const letterBox = document.getElementById("letterBox");
 
-  console.log("INPUT:", input);
+  console.log("RAW INPUT:", raw);
+  console.log("CLEAN INPUT:", input);
   console.log("AVAILABLE KEYS:", Object.keys(letters));
 
   const data = letters[input];
@@ -11,7 +12,7 @@ function checkPassword() {
   if (!data) {
     letterBox.innerHTML = `
       <p class="error">
-        Wrong password: "${inputRaw}"
+        Wrong password: "${raw}"
       </p>
     `;
     return;
