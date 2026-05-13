@@ -1,6 +1,6 @@
 const letters = {
   "juvi123": {
-    img: "juvi.jpg",
+    img: "juvi.png",
     text: `
 Dear Juvi,
 
