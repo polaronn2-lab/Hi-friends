@@ -1,0 +1,30 @@
+body {
+  background: #f6f0e8;
+  font-family: Georgia, serif;
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.container {
+  background: white;
+  width: 600px;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+input {
+  padding: 10px;
+  width: 70%;
+}
+
+button {
+  padding: 10px 15px;
+}
+
+#letterBox {
+  margin-top: 25px;
+  white-space: pre-wrap;
+  line-height: 1.6;
+}
